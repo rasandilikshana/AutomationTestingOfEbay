@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/l/IdeaProjects/AutomationExampleTF">
+        <classes>
+            <class name="browser_automation.LoadUrl">
+                <methods>
+                    <include name="test_one"/>
+                </methods>
+            </class>
+            <class name="testng_annotations.Annotations">
+                <methods>
+                    <include name="test_two"/>
+                    <include name="test_four"/>
+                    <include name="test_three"/>
+                    <include name="test_one"/>
+                </methods>
+            </class>
+            <class name="testng_annotations.dataprovider">
+                <methods>
+                    <include name="showStdDetails"/>
+                </methods>
+            </class>
+            <class name="testng_annotations.parallel">
+                <methods>
+                    <include name="method1"/>
+                    <include name="method2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
